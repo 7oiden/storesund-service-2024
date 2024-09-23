@@ -8,7 +8,7 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
       <Link to="/" className="navbar__logo" aria-label="Return to homepage">
         Home
       </Link>
-      <ul>
+      <ul className="navbar__list">
         <li>
           <NavLink
             to="installation"
@@ -18,6 +18,8 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
           >
             <div>Montering</div>
           </NavLink>
+        </li>
+        <li>
           <NavLink
             to="service"
             className={({ isActive }) =>
@@ -26,6 +28,8 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
           >
             <div>Service</div>
           </NavLink>
+        </li>
+        <li>
           <NavLink
             to="repair"
             className={({ isActive }) =>
@@ -34,6 +38,8 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
           >
             <div>Reparasjon</div>
           </NavLink>
+        </li>
+        <li>
           <NavLink
             to="contact"
             className={({ isActive }) =>

@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: getColor(navbarBg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+  &__list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+  }
+}
+
+.dropdown {
+  display: none;
+}

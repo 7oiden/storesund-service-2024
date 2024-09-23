@@ -3,6 +3,9 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 export default function NavDropdown({ isMenuOpen, setIsMenuOpen }) {
   return (
     <nav className="dropdown">
+      <Link to="/" className="navbar__logo" aria-label="Return to homepage">
+        Home
+      </Link>
       <ul>
         <li>
           <NavLink

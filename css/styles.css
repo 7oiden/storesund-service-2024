@@ -23,11 +23,83 @@ body {
 }
 
 #root {
-  position: relative;
+  width: 100%;
 }
 
 a {
   text-decoration: unset;
   color: unset;
   display: block;
+}
+
+.page-width {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .page-width {
+    width: 85%;
+  }
+}
+@media (min-width: 992px) {
+  .page-width {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .page-width {
+    width: 75%;
+  }
+}
+@media (min-width: 1400px) {
+  .page-width {
+    width: 70%;
+  }
+}
+@media (min-width: 1600px) {
+  .page-width {
+    width: 65%;
+  }
+}
+@media (min-width: 1800px) {
+  .page-width {
+    width: 60%;
+  }
+}
+@media (min-width: 2000px) {
+  .page-width {
+    width: 55%;
+  }
+}
+
+.nav {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: ) {
+  .nav {
+    width: 85%;
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.navbar__list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.dropdown {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
