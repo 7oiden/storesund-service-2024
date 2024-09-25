@@ -3,18 +3,24 @@
   margin-top: auto;
   background-color: getColor(footerBg);
   color: getColor(footerText);
-  padding: 2rem 0;
-
+  
   &__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 90%;
     margin: 0 auto;
+    padding: 3rem 0;
 
     @media (min-width: getBreakpoint(xxLarge)) {
       width: 85%;
     }
+  }
+
+  &__segment {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
   }
 
   &__heading {
@@ -26,5 +32,42 @@
   &__item {
     display: flex;
     gap: 1rem;
+    font-weight: 600;
+    color: getColor(footerHeading);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: getColor(footerText);
+    font-weight: 400;
+
+    &:hover {
+      color: getColor(footerText);
+    }
+
+    & div {
+      text-decoration: underline;
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background-color: #DBF9EE;
+    opacity: 0.5;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    font-size: 0.875rem;
+    background-color: #111A28;
+    margin: 0 auto;
+    padding: 1rem 0;
   }
 }
