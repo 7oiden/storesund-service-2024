@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { MdMenu, MdClose } from "react-icons/md";
+import logo from "../../assets/storesund-logo.png";
 
 export default function Navbar({ handleToggle, isMenuOpen }) {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar__logo" aria-label="Return to homepage">
-        Home
+        <img src={logo} />
       </Link>
       <ul className="navbar__list">
         <li>
@@ -50,7 +51,7 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
           </NavLink>
         </li>
       </ul>
-      <div className="nav__toggle" onClick={handleToggle}>
+      <div className="navbar__toggle" onClick={handleToggle}>
         {isMenuOpen ? <MdClose /> : <MdMenu />}
       </div>
     </nav>

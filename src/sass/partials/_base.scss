@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   background-color: pink;
   font-size: 1rem;
+  font-family: $main;
 }
 
 #root {
@@ -29,4 +30,11 @@ a {
   text-decoration: unset;
   color: unset;
   display: block;
+}
+
+svg {
+  display: block;
+  color: getColor(darkText);
+  width: 100%;
+  height: auto;
 }

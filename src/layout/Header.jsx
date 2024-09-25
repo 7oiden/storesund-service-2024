@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Navbar from "../components/navigation/Navbar";
 import NavDropdown from "../components/navigation/NavDropdown";
 
