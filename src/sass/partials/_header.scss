@@ -35,6 +35,7 @@
   }
 
   &__link {
+    position: relative;
     color: getColor(darkText);
     font-weight: 600;
     font-size: 1.125rem;
@@ -42,6 +43,17 @@
     &:hover {
       color: #27a489;
     }
+  }
+
+  &__marker {
+    position: absolute;
+    top: -100%;
+    transform: translate(0, -50%);
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 1rem;
+    background-color: #27a489;
   }
 
   &__toggle {

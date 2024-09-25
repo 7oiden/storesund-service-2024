@@ -7,47 +7,47 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar__logo" aria-label="Return to homepage">
-        <img src={logo} />
+        <img src={logo} alt="Logo" />
       </Link>
       <ul className="navbar__list">
         <li>
-          <NavLink
-            to="installation"
-            className={({ isActive }) =>
-              isActive ? "navbar__link navbar__link--active" : "navbar__link"
-            }
-          >
-            <div>Montering</div>
+          <NavLink to="installation" className="navbar__link">
+            {({ isActive }) => (
+              <>
+                Montering
+                {isActive && <div className="navbar__marker"></div>}
+              </>
+            )}
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="service"
-            className={({ isActive }) =>
-              isActive ? "navbar__link navbar__link--active" : "navbar__link"
-            }
-          >
-            <div>Service</div>
+          <NavLink to="service" className="navbar__link">
+            {({ isActive }) => (
+              <>
+                Service
+                {isActive && <div className="navbar__marker"></div>}
+              </>
+            )}
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="repair"
-            className={({ isActive }) =>
-              isActive ? "navbar__link navbar__link--active" : "navbar__link"
-            }
-          >
-            <div>Reparasjon</div>
+          <NavLink to="repair" className="navbar__link">
+            {({ isActive }) => (
+              <>
+                Reparasjon
+                {isActive && <div className="navbar__marker"></div>}
+              </>
+            )}
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="contact"
-            className={({ isActive }) =>
-              isActive ? "navbar__link navbar__link--active" : "navbar__link"
-            }
-          >
-            <div>Kontakt</div>
+          <NavLink to="contact" className="navbar__link">
+            {({ isActive }) => (
+              <>
+                Kontakt
+                {isActive && <div className="navbar__marker"></div>}
+              </>
+            )}
           </NavLink>
         </li>
       </ul>

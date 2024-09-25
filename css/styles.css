@@ -125,12 +125,23 @@ svg {
   }
 }
 .navbar__link {
+  position: relative;
   color: #1b556f;
   font-weight: 600;
   font-size: 1.125rem;
 }
 .navbar__link:hover {
   color: #27a489;
+}
+.navbar__marker {
+  position: absolute;
+  top: -100%;
+  transform: translate(0, -50%);
+  left: 0;
+  width: 100%;
+  display: block;
+  height: 1rem;
+  background-color: #27a489;
 }
 .navbar__toggle {
   cursor: pointer;
