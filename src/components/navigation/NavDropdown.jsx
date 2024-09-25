@@ -24,7 +24,12 @@ export default function NavDropdown({ isMenuOpen, setIsMenuOpen }) {
                     : "dropdown__link"
                 }
               >
-                <div>Montering</div>
+                {({ isActive }) => (
+                  <>
+                    Montering
+                    {isActive && <div className="dropdown__marker"></div>}
+                  </>
+                )}
               </NavLink>
             </li>
             <li>
@@ -36,7 +41,12 @@ export default function NavDropdown({ isMenuOpen, setIsMenuOpen }) {
                     : "dropdown__link"
                 }
               >
-                <div>Service</div>
+                {({ isActive }) => (
+                  <>
+                    Service
+                    {isActive && <div className="dropdown__marker"></div>}
+                  </>
+                )}
               </NavLink>
             </li>
             <li>
@@ -48,21 +58,31 @@ export default function NavDropdown({ isMenuOpen, setIsMenuOpen }) {
                     : "dropdown__link"
                 }
               >
-                <div>Reparasjon</div>
+                {({ isActive }) => (
+                  <>
+                    Reparasjon
+                    {isActive && <div className="dropdown__marker"></div>}
+                  </>
+                )}
               </NavLink>
             </li>
             <li>
-            <NavLink
-              to="contact"
-              className={({ isActive }) =>
-                isActive
-                  ? "dropdown__link dropdown__link--active"
-                  : "dropdown__link"
-              }
-            >
-              <div>Kontakt</div>
-            </NavLink>
-          </li>
+              <NavLink
+                to="contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "dropdown__link dropdown__link--active"
+                    : "dropdown__link"
+                }
+              >
+                {({ isActive }) => (
+                  <>
+                    Kontakt
+                    {isActive && <div className="dropdown__marker"></div>}
+                  </>
+                )}
+              </NavLink>
+            </li>
           </ul>
         </nav>
       ) : null}

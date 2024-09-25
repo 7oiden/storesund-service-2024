@@ -43,6 +43,10 @@
     &:hover {
       color: #27a489;
     }
+
+    &--active {
+      color: #27a489;
+    }
   }
 
   &__marker {
@@ -74,22 +78,47 @@
     display: none;
   }
 
-  &__link {
-    color: getColor(darkText);
-    font-weight: 600;
-
-    &:hover {
-      color: getColor(darkText);
-    }
-  }
-
   &__list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     list-style: none;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+
+    & li {
+      width: 7.5rem;
+      // background-color: bisque;
+    }
+  }
+
+  &__link {
+    display: flex;
+    position: relative;
+    width: 100%;
+    color: getColor(darkText);
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: getColor(darkText);
+    }
+
+     &--active {
+      color: #27a489;
+    }
+  }
+
+  &__marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.75rem;
+    display: block;
+    height: 100%;
+    transform: translateX(-100%);
+    background-color: #27a489;
   }
 }

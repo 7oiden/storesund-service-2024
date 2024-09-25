@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MdMenu, MdClose } from "react-icons/md";
 import logo from "../../assets/storesund-logo.png";
 
@@ -11,7 +11,12 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
       </Link>
       <ul className="navbar__list">
         <li>
-          <NavLink to="installation" className="navbar__link">
+          <NavLink
+            to="installation"
+            className={({ isActive }) =>
+              isActive ? "navbar__link navbar__link--active" : "navbar__link"
+            }
+          >
             {({ isActive }) => (
               <>
                 Montering
@@ -21,7 +26,12 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
           </NavLink>
         </li>
         <li>
-          <NavLink to="service" className="navbar__link">
+          <NavLink
+            to="service"
+            className={({ isActive }) =>
+              isActive ? "navbar__link navbar__link--active" : "navbar__link"
+            }
+          >
             {({ isActive }) => (
               <>
                 Service
@@ -31,7 +41,12 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
           </NavLink>
         </li>
         <li>
-          <NavLink to="repair" className="navbar__link">
+          <NavLink
+            to="repair"
+            className={({ isActive }) =>
+              isActive ? "navbar__link navbar__link--active" : "navbar__link"
+            }
+          >
             {({ isActive }) => (
               <>
                 Reparasjon
@@ -41,7 +56,12 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
           </NavLink>
         </li>
         <li>
-          <NavLink to="contact" className="navbar__link">
+          <NavLink
+            to="contact"
+            className={({ isActive }) =>
+              isActive ? "navbar__link navbar__link--active" : "navbar__link"
+            }
+          >
             {({ isActive }) => (
               <>
                 Kontakt
