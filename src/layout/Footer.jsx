@@ -1,5 +1,5 @@
-import FooterLink from "../components/navigation/common/FooterLink";
-import LinkButton from "../components/navigation/common/LinkButton";
+import FooterLink from "../components/common/FooterLink";
+import LinkButton from "../components/common/LinkButton";
 import { FaRegCopyright } from "react-icons/fa";
 
 export default function Footer() {

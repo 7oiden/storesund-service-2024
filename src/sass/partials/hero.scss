@@ -1,0 +1,56 @@
+.hero {
+  &__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero-img"
+      "hero-content"
+      "hero-banner";
+
+    @media (min-width: getBreakpoint(large)) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "hero-img hero-content"
+        "hero-banner hero-banner";
+    }
+  }
+
+  &__image {
+    width: 100%;
+    background-image: url("../assets/images/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #1b556f;
+    color: #fff;
+    padding: 2rem 5%;
+  }
+
+  &__heading {
+    color: #66D9AF;
+  }
+
+  &__banner {
+    width: 100%;
+    background-color: #111a28;
+  }
+}
+
+.hero__image {
+  grid-area: hero-img;
+}
+
+.hero__content {
+  grid-area: hero-content;
+}
+
+.hero__banner {
+  grid-area: hero-banner;
+}

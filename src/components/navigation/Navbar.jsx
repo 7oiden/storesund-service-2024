@@ -7,7 +7,7 @@ export default function Navbar({ handleToggle, isMenuOpen }) {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar__logo" aria-label="Return to homepage">
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Storesund Service logo" />
       </Link>
       <ul className="navbar__list">
         <li>
