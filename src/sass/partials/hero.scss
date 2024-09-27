@@ -8,14 +8,14 @@
     grid-template-areas:
       "hero-img"
       "hero-content"
-      "hero-banner";
+      "contact-banner";
 
     @media (min-width: getBreakpoint(large)) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr auto;
       grid-template-areas:
         "hero-img hero-content"
-        "hero-banner hero-banner";
+        "contact-banner contact-banner";
     }
   }
 
@@ -32,7 +32,7 @@
     gap: 1rem;
     background-color: #1b556f;
     color: #fff;
-    padding: 2rem 5% 4rem 5%;
+    padding: 4rem 5% 6rem 5%;
   }
 
   &__heading {
@@ -61,6 +61,6 @@
   grid-area: hero-content;
 }
 
-.contact-info {
-  grid-area: hero-banner;
+.contact-banner {
+  grid-area: contact-banner;
 }

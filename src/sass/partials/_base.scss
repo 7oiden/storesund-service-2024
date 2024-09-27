@@ -27,6 +27,10 @@ body {
   flex-direction: column;
 }
 
+// main {
+//   background-color: getColor(primaryBg);
+// }
+
 a {
   text-decoration: unset;
   color: unset;
@@ -88,8 +92,8 @@ h6 {
   border-radius: 5px;
 
   @media (min-width: getBreakpoint(large)) {
-      font-size: 1.125rem;
-    }
+    font-size: 1.125rem;
+  }
 
   &:hover {
     color: #fff;
@@ -144,53 +148,44 @@ h6 {
   }
 }
 
-.contact-info {
-  background-color: #111a28;
+.about {
+  background-color: getColor(primaryBg);
 
   &__container {
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem 2rem;
+    margin: 0 auto;
+    padding: 4rem 0;
 
     @media (min-width: getBreakpoint(large)) {
       flex-direction: row;
-      justify-content: center;
-      gap: 6rem;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    @media (min-width: getBreakpoint(twoXLarge)) {
+      width: 85%;
     }
   }
 
-  &__link {
+  &__content {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  &__icon {
-    width: 2rem;
-    color: getColor(primaryBtnBg);
+  &__image {
+    max-width: 300px;
+    border-radius: 5px;
 
-    @media (min-width: getBreakpoint(large)) {
-      width: 2.5rem;
+    & img {
+      border-radius: 5px;
     }
   }
 
-  &__arrow {
-    width: 1rem;
-    color: getColor(primaryBtnBg);
-    color: #dbf9ee;
-
-    @media (min-width: getBreakpoint(large)) {
-      width: 1.125rem;
-    }
-  }
-
-  &__text {
-    color: #dbf9ee;
-    font-size: 1rem;
-
-    @media (min-width: getBreakpoint(large)) {
-      font-size: 1.125rem;
-    }
+  &__heading {
+    font-size: 2rem;
   }
 }

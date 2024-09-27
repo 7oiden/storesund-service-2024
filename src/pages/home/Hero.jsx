@@ -2,7 +2,7 @@ import LinkButton from "../../components/common/LinkButton";
 // import heroImg from "../../assets/images/hero.jpg";
 import Heading from "../../components/common/Heading";
 import Badge from "../../components/common/Badge";
-import ContactInfo from "../../components/common/ContactInfo";
+import ContactBanner from "../../components/common/ContactBanner";
 
 export default function Hero() {
   return (
@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
           <LinkButton to="contact">Ta kontakt</LinkButton>
         </div>
-        <ContactInfo />
+        <ContactBanner />
       </div>
     </section>
   );
