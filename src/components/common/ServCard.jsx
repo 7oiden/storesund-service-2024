@@ -2,19 +2,19 @@ import PropTypes from "prop-types";
 import Heading from "./Heading";
 import { Link } from "react-router-dom";
 
-export default function Card({ to, icon, heading, children }) {
+export default function ServCard({ to, icon, heading, children }) {
   return (
-    <Link to={to} className="card">
-      <div className="card__icon">{icon}</div>
-      <Heading size="4" cssClass="card__heading">
+    <Link to={to} className="serv-card">
+      <div className="serv-card__icon">{icon}</div>
+      <Heading size="4" cssClass="serv-card__heading">
         {heading}
       </Heading>
-      <p className="card__text">{children}</p>
+      <p className="serv-card__text">{children}</p>
     </Link>
   );
 }
 
-Card.propTypes = {
+ServCard.propTypes = {
   to: PropTypes.string.isRequired,
   icon: PropTypes.node,
   heading: PropTypes.string.isRequired,

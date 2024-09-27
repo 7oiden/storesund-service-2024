@@ -6,7 +6,6 @@ import Installation from "./pages/Installation";
 import Service from "./pages/Service";
 import Repair from "./pages/Repair";
 import Contact from "./pages/Contact";
-// import "./App.css";
 
 function App() {
   return (

@@ -1,0 +1,66 @@
+.serv-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #1b556f;
+  color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+
+  &:hover {
+    color: #fff;
+    opacity: 0.75;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    color: #66d9af;
+
+    & svg {
+      width: 100%;
+      height: auto;
+      color: #66d9af;
+    }
+  }
+
+  &__heading {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #66d9af;
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
+
+.why-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: getColor(darkText);
+  padding: 2rem;
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+
+    & svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__heading {
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    text-align: center;
+    font-weight: 500;
+  }
+}
