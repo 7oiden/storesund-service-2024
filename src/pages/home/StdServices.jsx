@@ -4,14 +4,14 @@ import { TbAirConditioning } from "react-icons/tb";
 import { RiToolsFill } from "react-icons/ri";
 import { PiFanFill } from "react-icons/pi";
 
-export default function Services() {
+export default function StdServices() {
   return (
-    <section className="services">
-      <div className="services__container">
-        <Heading size="2" cssClass="services__heading">
+    <section className="std-services">
+      <div className="std-services__container">
+        <Heading size="2" cssClass="std-services__heading">
           Standard tjenester
         </Heading>
-        <div className="services__grid">
+        <div className="std-services__grid">
           <ServCard
             to="installation"
             icon={<TbAirConditioning />}

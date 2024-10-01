@@ -9,14 +9,9 @@ export default function About() {
           <img src={aboutImg} alt="Hugo Storesund" />
         </div>
         <div className="about__content">
-          <hgroup>
-            <Heading size="3" cssClass="about__heading">
-              Om meg
-            </Heading>
-            <Heading size="4" cssClass="about__subheading">
-              Mitt navn er Hugo Storesund
-            </Heading>
-          </hgroup>
+          <Heading size="3" cssClass="about__heading">
+            Om meg
+          </Heading>
           <p>
             Felis libero eget exercitationem enim laborum! Fuga luctus tempora
             deserunt omnis sociosqu. Tristique, wisi ducimus distinctio

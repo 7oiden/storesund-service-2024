@@ -1,5 +1,6 @@
 .about {
   background-color: #fff;
+  color: getColor(blackText);
 
   &__container {
     width: 90%;
@@ -33,9 +34,5 @@
     & img {
       border-radius: 5px;
     }
-  }
-
-  &__heading {
-    font-size: 2rem;
   }
 }

@@ -1,34 +1,34 @@
 import Heading from "../../components/common/Heading";
-import WhyCard from "../../components/common/WhyCard";
+import WhyMeCard from "../../components/common/WhyMeCard";
 import { FaPiggyBank } from "react-icons/fa6";
 import { FaToolbox } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 import { FaCertificate } from "react-icons/fa6";
 
-export default function Why() {
+export default function WhyMe() {
   return (
-    <section className="why">
-      <div className="why__container">
-        <Heading size="2" cssClass="why__heading">
+    <section className="why-me">
+      <div className="why-me__container">
+        <Heading size="2" cssClass="why-me__heading">
           Hvorfor velge meg?
         </Heading>
-        <div className="why__grid">
-          <WhyCard icon={<FaPiggyBank />} heading="Forutsigbart">
+        <div className="why-me__grid">
+          <WhyMeCard icon={<FaPiggyBank />} heading="Forutsigbar">
             Fastpris på service og montering av standard varmepumper. Kjøring er
             inkludert i prisen.
-          </WhyCard>
-          <WhyCard icon={<FaToolbox />} heading="Allsidig">
+          </WhyMeCard>
+          <WhyMeCard icon={<FaToolbox />} heading="Allsidig">
             Tar på meg alle typer oppdrag for næring og private, alt fra
             mikrobryggeri til skipsfart.
-          </WhyCard>
-          <WhyCard icon={<FaClock />} heading="Fleksibel">
+          </WhyMeCard>
+          <WhyMeCard icon={<FaClock />} heading="Fleksibel">
             Kommer hjem til deg også etter arbeidstid, og det uten ekstra
             kostnad.
-          </WhyCard>
-          <WhyCard icon={<FaCertificate />} heading="Erfaring">
+          </WhyMeCard>
+          <WhyMeCard icon={<FaCertificate />} heading="Erfaring">
             Mer enn 20 års erfaring med varmepumper, og 15 års erfaring som
             maskinist off-shore.
-          </WhyCard>
+          </WhyMeCard>
         </div>
       </div>
     </section>

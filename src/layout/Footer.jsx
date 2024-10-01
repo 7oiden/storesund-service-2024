@@ -32,7 +32,7 @@ export default function Footer() {
           <div>
             <p className="footer__heading">Adresse</p>
             <div>
-              <p>Lyngvegen 4</p>
+              <p>Lyngvegen 4a</p>
               <p>5382 Skogsvåg</p>
             </div>
           </div>
