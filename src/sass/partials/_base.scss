@@ -92,10 +92,6 @@ h6 {
   border-radius: 5px;
   font-weight: 500;
 
-  @media (min-width: getBreakpoint(large)) {
-    font-size: 1.125rem;
-  }
-
   &:hover {
     color: #fff;
     opacity: 0.75;

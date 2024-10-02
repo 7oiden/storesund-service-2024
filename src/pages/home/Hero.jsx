@@ -30,6 +30,8 @@ export default function Hero() {
               Ta kontakt
             </LinkButton>
           </div>
+          <div className="hero__bg-circle--large"></div>
+          <div className="hero__bg-circle--small"></div>
         </div>
         <ContactBanner />
       </div>
