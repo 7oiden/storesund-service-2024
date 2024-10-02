@@ -17,11 +17,11 @@ export default function StdServices() {
             icon={<TbAirConditioning />}
             heading="Montering"
           >
-            Fastpris på <em>kr. 3750,-</em> for standard montasje og
+            Fastpris på <em>kr. 3750</em> for standard montasje og
             installasjon av luft-til-luft varmepumper for privatpersoner.
           </ServCard>
           <ServCard to="service" icon={<PiFanFill />} heading="Service">
-            Fastpris på <em>kr. 1300,-</em>for standard service på luft-til-luft
+            Fastpris på <em>kr. 1300</em> for standard service på luft-til-luft
             varmepumper opp til 10kW for privatpersoner.
           </ServCard>
           <ServCard to="repair" icon={<RiToolsFill />} heading="Reparasjon">

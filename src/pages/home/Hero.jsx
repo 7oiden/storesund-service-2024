@@ -25,7 +25,11 @@ export default function Hero() {
             Ta kontakt for timeavtale, eller for gratis befaring og prisestimat
             på tjenester som er utenom standard.
           </p>
-          <LinkButton to="contact">Ta kontakt</LinkButton>
+          <div className="hero__cta">
+            <LinkButton to="contact" className="hero__button">
+              Ta kontakt
+            </LinkButton>
+          </div>
         </div>
         <ContactBanner />
       </div>

@@ -1,4 +1,27 @@
-.about__heading, .other-services__heading {
+em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hero__heading {
+  color: #66d9af;
+  font-size: 2.5rem;
+
+  @media (min-width: getBreakpoint(large)) {
+      font-size: 3rem;
+    }
+}
+
+.hero__subheading {
+  font-size: 1.375rem;
+
+  strong {
+    color: #66d9af;
+  }
+}
+
+.about__heading,
+.other-services__heading {
   font-size: 2rem;
   font-weight: 700;
 }
