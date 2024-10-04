@@ -1,0 +1,14 @@
+.about__image {
+  max-width: 250px;
+  border-radius: 5px;
+
+  & img {
+    border-radius: 5px;
+  }
+}
+
+.other-services__image {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}

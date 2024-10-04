@@ -1,6 +1,5 @@
 .contact-banner {
   background-color: #111a28;
-  // font-family: "inter";
   position: relative;
   top: 0;
 
@@ -22,16 +21,6 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-
-  &__icon {
-    z-index: 100;
-    width: 2rem;
-    color: getColor(primaryBtnBg);
-
-    @media (min-width: getBreakpoint(large)) {
-      width: 2.5rem;
-    }
   }
 
   &__icon-bg {

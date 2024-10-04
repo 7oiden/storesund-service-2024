@@ -1,0 +1,24 @@
+.link-icon {
+  width: 1.5rem;
+  color: getColor(footerText);
+}
+
+.copyright-icon {
+  width: 1rem;
+  color: getColor(footerText);
+}
+
+.link-button-icon {
+  width: 1rem;
+  color: #fff;
+}
+
+.contact-banner__icon {
+  z-index: 100;
+  width: 2rem;
+  color: getColor(primaryBtnBg);
+
+  @media (min-width: getBreakpoint(large)) {
+    width: 2.5rem;
+  }
+}

@@ -69,40 +69,6 @@ h6 {
   padding: 0;
 }
 
-.link-icon {
-  width: 1.5rem;
-  color: getColor(footerText);
-}
-
-.copyright-icon {
-  width: 1rem;
-  color: getColor(footerText);
-}
-
-.link-button {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: getColor(primaryBtnBg);
-  color: #fff;
-  margin-right: auto;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  font-weight: 500;
-
-  &:hover {
-    color: #fff;
-    opacity: 0.75;
-  }
-}
-
-.link-button-icon {
-  width: 1rem;
-  color: #fff;
-}
-
 .serv-tag {
   background-color: #c0f2db;
   border-radius: 10px;
@@ -112,8 +78,4 @@ h6 {
   padding: 0.5rem;
 }
 
-.other-services__image {
-  width: 100%;
-  height: auto;
-  border-radius: 3px;
-}
+

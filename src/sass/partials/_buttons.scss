@@ -1,0 +1,27 @@
+.link-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: getColor(primaryBtnBg);
+  color: #fff;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+
+  &:hover {
+    color: #fff;
+    opacity: 0.75;
+  }
+}
+
+.hero__cta {
+  margin-right: auto;
+  margin-top: 1rem;
+
+  @media (min-width: getBreakpoint(large)) {
+    font-size: 1.125rem;
+  }
+}
