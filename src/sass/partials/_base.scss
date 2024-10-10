@@ -18,6 +18,8 @@ body {
   color: getColor(darkText);
   font-size: 1rem;
   font-family: $main;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 #root {

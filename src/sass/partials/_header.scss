@@ -61,7 +61,7 @@
     left: 0;
     width: 100%;
     display: block;
-    height: 1rem;
+    height: 15px;
     background-color: #27a489;
   }
 
@@ -78,7 +78,7 @@
 
 .dropdown {
   padding: 0.5rem 0 1.5rem 0;
-  z-index: 100;
+  z-index: 1000;
   position: relative;
   background-color: #fff;
 
@@ -113,7 +113,7 @@
       color: getColor(darkText);
     }
 
-     &--active {
+    &--active {
       color: #27a489;
     }
   }

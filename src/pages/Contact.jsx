@@ -1,7 +1,13 @@
+import PageHeading from "../components/common/PageHeading";
+import ContactBanner from "../components/common/ContactBanner";
+
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <>
+      <div className="page-heading-container">
+        <PageHeading>Contact.</PageHeading>
+        <ContactBanner />
+      </div>
+    </>
   );
 }
