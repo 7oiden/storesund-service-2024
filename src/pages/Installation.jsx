@@ -2,6 +2,8 @@ import PageHeading from "../components/common/PageHeading";
 import PageIntro from "../components/common/PageIntro";
 import ContactBanner from "../components/common/ContactBanner";
 import image from "../assets/images/pic-11.png";
+import { TbAirConditioning } from "react-icons/tb";
+import ServHeading from "../components/common/ServHeading";
 
 export default function Installation() {
   return (
@@ -26,6 +28,11 @@ export default function Installation() {
         </p>
       </PageIntro>
       <ContactBanner />
+      <section className="service-section">
+        <ServHeading icon={<TbAirConditioning />}>
+          Fast pris for standard montering kr. 3750,- (inkl. mva)
+        </ServHeading>
+      </section>
     </>
   );
 }

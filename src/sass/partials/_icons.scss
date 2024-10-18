@@ -22,3 +22,13 @@
     width: 2.5rem;
   }
 }
+
+.serv-heading__icon svg {
+  width: 5rem;
+  color: getColor(primaryHeading);
+}
+
+.list-icon svg {
+  width: 1.25rem;
+  color: getColor(primaryBtnBg);
+}

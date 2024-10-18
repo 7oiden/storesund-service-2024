@@ -45,6 +45,13 @@ img {
   height: auto;
 }
 
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 svg {
   display: block;
   color: getColor(darkText);
@@ -79,5 +86,3 @@ h6 {
   font-weight: 600;
   padding: 0.5rem;
 }
-
-
