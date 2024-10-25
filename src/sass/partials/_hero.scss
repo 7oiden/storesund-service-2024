@@ -54,7 +54,7 @@
     gap: 1rem;
     color: #fff;
     padding: 2rem 5% 3rem 5%;
-    
+
     @media (min-width: getBreakpoint(medium)) {
       padding: 0 7.5%;
     }
@@ -107,6 +107,31 @@
       height: 20rem;
     }
   }
+
+  // &__bg-circle--bottom::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: #2094aa;
+  //   border-radius: 50%;
+  //   width: 10rem;
+  //   height: 10rem;
+  //   bottom: 0;
+  //   right: 0;
+  //   transform: translate(50%, 50%);
+  //   opacity: 0.4;
+  //   display: none;
+
+  //   @media (min-width: getBreakpoint(large)) {
+  //     display: block;
+  //     width: 10rem;
+  //     height: 10rem;
+  //   }
+
+  //   @media (min-width: getBreakpoint(xLarge)) {
+  //     width: 15rem;
+  //     height: 15rem;
+  //   }
+  // }
 }
 
 .hero__image {

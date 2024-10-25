@@ -1,4 +1,94 @@
 import { FaCircleCheck } from "react-icons/fa6";
+import { FaCircleExclamation } from "react-icons/fa6";
+
+export const installationServArray = [
+  {
+    id: 1,
+    icon: <FaCircleCheck />,
+    text: "Hulltaking i trevegg med inntil 30 cm tykkelse.",
+  },
+  {
+    id: 2,
+    icon: <FaCircleCheck />,
+    text: "Elektrisk tilkobling mellom inndel og utedel.",
+  },
+  {
+    id: 3,
+    icon: <FaCircleCheck />,
+    text: "Vakuumering og tetthetsprøving av anlegget.",
+  },
+  {
+    id: 4,
+    icon: <FaCircleCheck />,
+    text: "Test og igangkjøring av varmepumpen, med tilhørende testrapport.",
+  },
+  {
+    id: 5,
+    icon: <FaCircleCheck />,
+    text: "Forsvarlig tetting av gjennomføring i vegg.",
+  },
+  {
+    id: 6,
+    icon: <FaCircleCheck />,
+    text: "Gratis kjøring inntil 50 km tur-retur.",
+  },
+];
+
+export const installationPartsArray = [
+  {
+    id: 1,
+    icon: <FaCircleCheck />,
+    text: "Inntil 5 meter isolerte kobberrør, og tilhørende signalkabel mellom innedel og utedel.",
+  },
+  {
+    id: 2,
+    icon: <FaCircleCheck />,
+    text: "Inntil 5 meter slange for kondensvann.",
+  },
+  {
+    id: 3,
+    icon: <FaCircleCheck />,
+    text: "Inntil 5 meter UV-bestandige plastkanaler for å beskytte rørene utvendig.",
+  },
+  {
+    id: 4,
+    icon: <FaCircleCheck />,
+    text: "To veggbraketter (veggstativ).",
+  },
+  {
+    id: 5,
+    icon: <FaCircleCheck />,
+    text: "Fire vibrasjonsdempere i gummi.",
+  },
+  {
+    id: 6,
+    icon: <FaCircleCheck />,
+    text: "Kabel for å koble varmepumpen til strøm.",
+  },
+  {
+    id: 7,
+    icon: <FaCircleCheck />,
+    text: "Plastrør til gjennomføring i veggen.",
+  },
+];
+
+export const installationNotIncludedArray = [
+  {
+    id: 1,
+    icon: <FaCircleExclamation />,
+    text: "Elektrisk tilkobling av utedel, inklusive jordfeilbryter. Denne jobben må utføres av elektriker.",
+  },
+  {
+    id: 2,
+    icon: <FaCircleExclamation />,
+    text: "Boring gjennom lettmur, eller kjerneboring gjennom betongmur.",
+  },
+  {
+    id: 3,
+    icon: <FaCircleExclamation />,
+    text: "Lift eller stillas for montering over arbeidshøyde.",
+  },
+];
 
 export const serviceArray = [
   {
@@ -19,7 +109,7 @@ export const serviceArray = [
   {
     id: 4,
     icon: <FaCircleCheck />,
-    text: "Ser på plasseringen av varmekabel og termostat.",
+    text: "Sjekker plassering av varmekabel og termostat.",
   },
   {
     id: 5,

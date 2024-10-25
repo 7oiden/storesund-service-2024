@@ -18,5 +18,5 @@ ServCard.propTypes = {
   to: PropTypes.string.isRequired,
   icon: PropTypes.node,
   heading: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };

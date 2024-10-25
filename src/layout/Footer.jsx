@@ -41,7 +41,7 @@ export default function Footer() {
         <div className="footer__segment footer__segment-4">
           <hr className="footer__hor-divider" />
           <div>
-            <p className="footer__heading">OSS</p>
+            <p className="footer__heading">FAQ</p>
             <FooterLink to="contact">Ofte stilte spørsmål</FooterLink>
           </div>
           <div>

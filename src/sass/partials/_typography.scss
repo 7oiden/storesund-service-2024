@@ -43,27 +43,46 @@ em {
   text-align: center;
 }
 
-.page-heading {
-  background-color: getColor(colorBg);
-  padding: 2rem 0;
-}
+// .page-heading {
+//   background-color: #111a28;
+//   padding: 2rem 0;
+// }
 
-.page-heading {
+// .page-heading {
+//   font-size: 2.5rem;
+//   font-weight: 700;
+//   color: getColor(footerText);
+//   text-align: center;
+
+//   @media (min-width: getBreakpoint(large)) {
+//     font-size: 3rem;
+//   }
+
+//   @media (min-width: getBreakpoint(xLarge)) {
+//     font-size: 3.25rem;
+//   }
+
+//   @media (min-width: getBreakpoint(twoXLarge)) {
+//     font-size: 3.5rem;
+//   }
+// }
+
+.page-intro__title {
   font-size: 2.5rem;
-  font-weight: 700;
   color: getColor(primaryHeading);
-  text-align: center;
 
   @media (min-width: getBreakpoint(large)) {
-    font-size: 3rem;
-  }
-
-  @media (min-width: getBreakpoint(xLarge)) {
-    font-size: 3.25rem;
-  }
-
-  @media (min-width: getBreakpoint(twoXLarge)) {
     font-size: 3.5rem;
+  }
+}
+
+.page-intro__heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: getColor(primaryHeading);
+
+  @media (min-width: getBreakpoint(large)) {
+    font-size: 1.25rem;
   }
 }
 
@@ -75,4 +94,3 @@ em {
 
 .service-list__heading {
 }
-
