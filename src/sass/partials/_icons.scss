@@ -24,11 +24,19 @@
 }
 
 .serv-heading__icon svg {
-  width: 5rem;
+  width: 4rem;
   color: getColor(primaryHeading);
+
+  @media (min-width: getBreakpoint(large)) {
+    width: 5rem;
+  }
 }
 
 .list-icon svg {
   width: 1.25rem;
-  color: getColor(primaryBtnBg);
+  color: getColor(colorBg);
+
+  @media (min-width: getBreakpoint(large)) {
+    width: 1.5rem;
+  }
 }

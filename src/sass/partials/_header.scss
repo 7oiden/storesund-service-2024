@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  min-height: 80px;
+  min-height: 100px;
   background-color: getColor(navbarBg);
 }
 
@@ -17,7 +17,7 @@
   }
 
   &__logo {
-    width: 200px;
+    width: 250px;
 
     & img {
       width: 100%;
@@ -56,13 +56,14 @@
 
   &__marker {
     position: absolute;
-    top: -100%;
-    transform: translate(0, -50%);
+    top: 0;
+    // top: -100%;
+    transform: translate(0, -200%);
     left: 0;
     width: 100%;
     display: block;
-    height: 15px;
-    background-color: #27a489;
+    height: 20px;
+    background-color: getColor(primaryBtnBg);
   }
 
   &__toggle {

@@ -1,6 +1,11 @@
 .about__image {
-  max-width: 250px;
+  width: 200px;
   border-radius: 5px;
+  flex-shrink: 0;
+
+   @media (min-width: getBreakpoint(large)) {
+      width: 225px;
+    }
 
   & img {
     border-radius: 5px;
@@ -13,7 +18,7 @@
   border-radius: 3px;
 }
 
-.page-intro__image {
+.page-hero__image {
   height: auto;
   min-height: 300px;
   width: 100%;

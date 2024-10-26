@@ -29,6 +29,10 @@
     font-size: 1.375rem;
     font-weight: 600;
     color: #66d9af;
+
+    @media (min-width: getBreakpoint(large)) {
+      font-size: 1.5rem;
+    }
   }
 
   &__text {
@@ -62,24 +66,5 @@
 
   &__text {
     text-align: center;
-  }
-}
-
-.serv-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
-  background-color: getColor(cardBg);
-  color: #fff;
-  border-radius: 3px;
-  font-size: 1.25rem;
-  text-align: center;
-
-  @media (min-width: getBreakpoint(large)) {
-    flex-direction: row;
-    gap: 2rem;
   }
 }

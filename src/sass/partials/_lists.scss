@@ -1,11 +1,11 @@
 .service-list {
   background-color: getColor(secondaryBg);
-  margin-top: 1rem;
-  border-radius: 3px;
-  padding: 3rem 1rem;
+  border-radius: 0 0 3px 3px;
+  width: auto;
+  padding-top: 3rem;
 
-  @media (min-width: getBreakpoint(large)) {
-    padding: 3rem;
+  &:last-child {
+    padding-bottom: 3rem;
   }
 
   &__content {
@@ -24,6 +24,17 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-left: 1rem;
+    border-top: 1px solid #e0dfdf;
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+    @media (min-width: getBreakpoint(large)) {
+      padding-left: 2rem;
+    }
+
+    &:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
   }
 }

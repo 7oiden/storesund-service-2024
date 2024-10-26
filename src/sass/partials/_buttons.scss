@@ -19,9 +19,9 @@
 
 .hero__cta {
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: 1.125rem;
 
   @media (min-width: getBreakpoint(large)) {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }

@@ -1,5 +1,4 @@
-// import PageHeading from "../components/common/PageHeading";
-import PageIntro from "../components/common/PageIntro";
+import PageHero from "../components/common/PageHero";
 import ContactBanner from "../components/common/ContactBanner";
 import ServHeading from "../components/common/ServHeading";
 import ServiceList from "../components/common/ServiceList";
@@ -10,8 +9,7 @@ export default function Service() {
   return (
     <>
       <div className="top-wrapper">
-        {/* <PageHeading>Service.</PageHeading> */}
-        <PageIntro
+        <PageHero
           title="Service."
           heading="Sikre lang levetid og optimal energieffektivitet med regelmessig service på din varmepumpe."
           image="service"
@@ -31,7 +29,7 @@ export default function Service() {
             tillegg bør man jevnlig utføre vedlikehold og rengjøring på
             egenhånd.
           </p>
-        </PageIntro>
+        </PageHero>
         <ContactBanner />
       </div>
       <section className="service-section">

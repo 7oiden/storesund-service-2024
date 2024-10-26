@@ -1,5 +1,4 @@
-import PageHeading from "../components/common/PageHeading";
-import PageIntro from "../components/common/PageIntro";
+import PageHero from "../components/common/PageHero";
 import ContactBanner from "../components/common/ContactBanner";
 import { TbAirConditioning } from "react-icons/tb";
 import ServHeading from "../components/common/ServHeading";
@@ -14,8 +13,7 @@ export default function Installation() {
   return (
     <>
       <div className="top-wrapper">
-        {/* <PageHeading>Montering.</PageHeading> */}
-        <PageIntro
+        <PageHero
           title="Montering."
           heading="Jeg monterer og demonterer alle typer varmepumper, også de du har kjøpt selv."
           image="installation"
@@ -36,7 +34,7 @@ export default function Installation() {
             pristilbud på montasje av andre typer varmepumper, eller anlegg som
             faller utenom det som er definert som standard.{" "}
           </p>
-        </PageIntro>
+        </PageHero>
         <ContactBanner />
       </div>
       <section className="service-section">

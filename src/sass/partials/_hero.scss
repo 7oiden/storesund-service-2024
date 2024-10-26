@@ -2,7 +2,7 @@
   position: relative;
 
   @media (min-width: getBreakpoint(medium)) {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
   }
 
   &__container {

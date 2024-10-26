@@ -1,5 +1,4 @@
 import LinkButton from "../../components/common/LinkButton";
-// import heroImg from "../../assets/images/hero.jpg";
 import Heading from "../../components/common/Heading";
 import Badge from "../../components/common/Badge";
 import ContactBanner from "../../components/common/ContactBanner";

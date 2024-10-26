@@ -1,5 +1,4 @@
-// import PageHeading from "../components/common/PageHeading";
-import PageIntro from "../components/common/PageIntro";
+import PageHero from "../components/common/PageHero";
 import ContactBanner from "../components/common/ContactBanner";
 import { RiToolsFill } from "react-icons/ri";
 import ServHeading from "../components/common/ServHeading";
@@ -10,8 +9,7 @@ export default function Repair() {
   return (
     <>
       <div className="top-wrapper">
-        {/* <PageHeading>Reparasjon.</PageHeading> */}
-        <PageIntro
+        <PageHero
           title="Reparasjon."
           heading="Hvorfor kjøpe ny varmepumpe når du kan reparere den som du allerede har?"
           image="repair"
@@ -34,7 +32,7 @@ export default function Repair() {
           <p>
             Ta kontakt i dag for gratis befaring med feilsøking og prisestimat.
           </p>
-        </PageIntro>
+        </PageHero>
         <ContactBanner />
       </div>
       <section className="service-section">
