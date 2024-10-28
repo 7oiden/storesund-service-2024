@@ -8,6 +8,8 @@ import {
   installationPartsArray,
   installationNotIncludedArray,
 } from "../constants/ServiceListData";
+import InfoBox from "../components/common/InfoBox";
+import Image from "../assets/images/pic-11.png";
 
 export default function Installation() {
   return (
@@ -38,21 +40,41 @@ export default function Installation() {
         <ContactBanner />
       </div>
       <section className="service-section">
-        <ServHeading icon={<TbAirConditioning />}>
-          Fast pris for standard montering kr. 3750,- (inkl. mva)
-        </ServHeading>
-        <ServiceList
-          heading="Tjenester som er inkludert i standard montering:"
-          arr={installationServArray}
-        />
-        <ServiceList
-          heading="Deler som er inkludert i standard montering:"
-          arr={installationPartsArray}
-        />
-        <ServiceList
-          heading="Følgende er ikke inkludert i standard montering:"
-          arr={installationNotIncludedArray}
-        />
+        <div>
+          <ServHeading
+            icon={<TbAirConditioning />}
+            price="kr. 3750,- (inkl. mva)"
+          >
+            Fast pris for standard montering
+          </ServHeading>
+          <ServiceList
+            heading="Tjenester som er inkludert i standard montering:"
+            arr={installationServArray}
+          />
+          <ServiceList
+            heading="Deler som er inkludert i standard montering:"
+            arr={installationPartsArray}
+          />
+          <ServiceList
+            heading="Følgende er ikke inkludert i standard montering:"
+            arr={installationNotIncludedArray}
+          />
+        </div>
+        <InfoBox
+          heading="Ikke bare luft-til-luft 
+varmepumper"
+          image={Image}
+          btn={true}
+        >
+          <p>
+            Dersom du ønsker montering av andre typer varmepumper eller
+            aircondition-anlegg ta gjerne kontakt for et prisestimat.{" "}
+          </p>
+          <p>
+            Med f-gass kategori I sertifisering kan jeg også montere anlegg med
+            over 3kg kuldemedium.
+          </p>
+        </InfoBox>
       </section>
     </>
   );

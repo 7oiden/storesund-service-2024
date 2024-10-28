@@ -52,11 +52,11 @@ em {
   gap: 0.5rem;
   padding: 1rem 2rem;
   background-color: getColor(colorBg);
-  color: getColor(primaryHeading);
+  color: getColor(whiteText);
   border-radius: 3px 3px 0 0;
   font-size: 1.25rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
 
   @media (min-width: getBreakpoint(large)) {
     flex-direction: row;
@@ -97,8 +97,21 @@ em {
 }
 
 .service-list__heading {
-  background-color: getColor(primaryBg);
+  background-color: #e5edf0;
   color: getColor(darkText);
   padding: 1rem 2rem;
-  border: 1px solid #e0dfdf;
+  border: 1px solid #cad5d8;
+  border-radius: 3px;
+}
+
+.info-box__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-content: end;
+  
+
+  @media (min-width: getBreakpoint(large)) {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
 }

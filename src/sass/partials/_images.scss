@@ -3,9 +3,9 @@
   border-radius: 5px;
   flex-shrink: 0;
 
-   @media (min-width: getBreakpoint(large)) {
-      width: 225px;
-    }
+  @media (min-width: getBreakpoint(large)) {
+    width: 225px;
+  }
 
   & img {
     border-radius: 5px;
@@ -28,8 +28,8 @@
   background-position: center center;
 
   @media (min-width: getBreakpoint(twoXLarge)) {
-      flex-basis: 50%;
-    }
+    flex-basis: 50%;
+  }
 
   &--installation {
     background-image: url("../assets/images/installation.jpg");
@@ -41,5 +41,11 @@
 
   &--repair {
     background-image: url("../assets/images/repair.jpg");
+  }
+}
+
+.info-box__image {
+  & img {
+    border-radius: 3px;
   }
 }

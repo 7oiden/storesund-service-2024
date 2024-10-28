@@ -276,6 +276,7 @@ h6 {
   display: flex;
   flex-direction: column-reverse;
   background-color: #024b62;
+  background: linear-gradient(135deg, #024b62 50%, #1b556f 50%);
 }
 @media (min-width: 992px) {
   .page-hero__container {
@@ -308,7 +309,15 @@ h6 {
 }
 
 .service-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   margin: 5rem auto;
+}
+@media (min-width: 992px) {
+  .service-section {
+    gap: 5rem;
+  }
 }
 
 .footer {
@@ -601,11 +610,11 @@ em {
   gap: 0.5rem;
   padding: 1rem 2rem;
   background-color: #024b62;
-  color: #66d9af;
+  color: #fff;
   border-radius: 3px 3px 0 0;
   font-size: 1.25rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
 }
 @media (min-width: 992px) {
   .serv-heading {
@@ -650,10 +659,23 @@ em {
 }
 
 .service-list__heading {
-  background-color: #f3f4f6;
+  background-color: #e5edf0;
   color: #1b556f;
   padding: 1rem 2rem;
-  border: 1px solid #e0dfdf;
+  border: 1px solid #cad5d8;
+  border-radius: 3px;
+}
+
+.info-box__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-content: end;
+}
+@media (min-width: 992px) {
+  .info-box__heading {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
 }
 
 .hero {
@@ -957,6 +979,48 @@ em {
   text-align: center;
 }
 
+.info-box {
+  display: grid;
+  grid-template-areas: "heading" "image" "text";
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 2rem 1rem;
+}
+@media (min-width: 768px) {
+  .info-box {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .info-box {
+    grid-template-areas: "heading image" "text image";
+    grid-template-columns: 2fr 1fr;
+    gap: 0 2rem;
+  }
+}
+.info-box__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.info-box__image {
+  border-radius: 3px;
+  width: 100%;
+}
+
+.info-box__heading {
+  grid-area: heading;
+}
+
+.info-box__text {
+  grid-area: text;
+}
+
+.info-box__image {
+  grid-area: image;
+}
+
 .link-button {
   display: flex;
   align-items: center;
@@ -1029,6 +1093,10 @@ em {
   background-image: url("../assets/images/repair.jpg");
 }
 
+.info-box__image img {
+  border-radius: 3px;
+}
+
 .link-icon {
   width: 1.5rem;
   color: #dbf9ee;
@@ -1079,10 +1147,10 @@ em {
   background-color: #fff;
   border-radius: 0 0 3px 3px;
   width: auto;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 .service-list:last-child {
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 .service-list__content {
   max-width: 700px;

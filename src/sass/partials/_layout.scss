@@ -177,6 +177,7 @@
     display: flex;
     flex-direction: column-reverse;
     background-color: getColor(colorBg);
+    background: linear-gradient(135deg, getColor(colorBg) 50%, #1b556f 50%);
 
     @media (min-width: getBreakpoint(large)) {
       flex-direction: row-reverse;
@@ -209,8 +210,14 @@
 
 .service-section {
   @extend .page-width;
-
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   margin: 5rem auto;
+
+  @media (min-width: getBreakpoint(large)) {
+    gap: 5rem;
+  }
 }
 
 .footer {
