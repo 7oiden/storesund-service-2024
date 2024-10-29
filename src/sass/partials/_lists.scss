@@ -9,8 +9,13 @@
   }
 
   &__content {
+    width: 95%;
     max-width: 700px;
     margin: 0 auto;
+
+    @media (min-width: getBreakpoint(large)) {
+      width: 100%;
+    }
   }
 
   &__entries {

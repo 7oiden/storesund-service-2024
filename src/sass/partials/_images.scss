@@ -26,6 +26,7 @@
   background-image: url("../assets/images/pic-11.png");
   background-size: cover;
   background-position: center center;
+  display: flex;
 
   @media (min-width: getBreakpoint(twoXLarge)) {
     flex-basis: 50%;

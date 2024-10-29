@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
 
     @media (min-width: getBreakpoint(medium)) {
       flex-direction: row;
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    align-self: center;
+    // align-self: center;
   }
 
   &__icon-bg {
@@ -34,8 +34,8 @@
     border-radius: 10px;
 
     @media (min-width: getBreakpoint(large)) {
-      width: 2rem;
-      height: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
 
@@ -51,7 +51,7 @@
 
   &__text {
     color: #dbf9ee;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     @media (min-width: getBreakpoint(large)) {
       font-size: 1.25rem;

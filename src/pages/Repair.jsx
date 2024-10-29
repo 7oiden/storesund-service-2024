@@ -20,10 +20,10 @@ export default function Repair() {
             anlegget, der man i tillegg til kostnaden for en ny varmepumpe også
             vil få et betydelig utlegg ny montering.
           </p>
-          <p>
+          {/* <p>
             Jeg har stort kontaktnett for reservedeler, og vil strekke meg langt
             for å holde reparasjonskostnaden så lav som mulig.
-          </p>
+          </p> */}
           <p>
             Dersom reparasjon likevel skulle vise seg å ikke være
             regningssvarende er jeg behjelpelig med en prisgunstig erstatning.
@@ -36,13 +36,15 @@ export default function Repair() {
         <ContactBanner />
       </div>
       <section className="service-section">
-        <ServHeading icon={<RiToolsFill />}>
-          Ta kontakt for prisestimat på reparasjon.
-        </ServHeading>
-        <ServiceList
-          heading="Eksempler på type reparasjoner jeg utfører:"
-          arr={repairArray}
-        />
+        <div>
+          <ServHeading icon={<RiToolsFill />}>
+            Ta kontakt for prisestimat på reparasjon.
+          </ServHeading>
+          <ServiceList
+            heading="Eksempler på type reparasjoner jeg utfører:"
+            arr={repairArray}
+          />
+        </div>
       </section>
     </>
   );

@@ -19,7 +19,11 @@
   color: getColor(primaryBtnBg);
 
   @media (min-width: getBreakpoint(large)) {
-    width: 2.5rem;
+    width: 3rem;
+  }
+
+  & svg {
+    color: getColor(primaryBtnBg);
   }
 }
 
@@ -28,7 +32,7 @@
   color: getColor(primaryHeading);
 
   @media (min-width: getBreakpoint(large)) {
-    width: 5rem;
+    width: 6rem;
   }
 }
 
