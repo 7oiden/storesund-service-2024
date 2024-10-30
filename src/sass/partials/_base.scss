@@ -22,6 +22,35 @@ body {
   font-weight: 500;
 }
 
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: getColor(primaryBg);
+  margin: 0.5rem;
+  border-radius: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: gray;
+  border: none;
+  border-radius: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: getColor(primaryHeading);
+  cursor: pointer;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: #f3f4f6 !important;
+  color: getColor(whiteText);
+  -webkit-text-fill-color: getColor(whiteText);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 #root {
   width: 100%;
   height: 100%;

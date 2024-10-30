@@ -43,3 +43,23 @@
     }
   }
 }
+
+.contact-hero__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+
+  @media (min-width: getBreakpoint(large)) {
+    margin-top: 1rem;
+  }
+
+  & li {
+    list-style: disc;
+    margin-left: 1rem;
+
+    &::marker {
+      color: getColor(primaryHeading);
+    }
+  }
+}

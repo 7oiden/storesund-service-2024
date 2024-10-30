@@ -1,6 +1,7 @@
 // import ContactBanner from "../components/common/ContactBanner";
 import Heading from "../components/common/Heading";
 import ContactBannerLink from "../components/common/ContactBannerLink";
+import ContactForm from "./contact/ContactForm";
 import { FaSquarePhone } from "react-icons/fa6";
 import { FaSquareEnvelope } from "react-icons/fa6";
 
@@ -11,57 +12,30 @@ export default function Contact() {
         <section className="page-hero">
           <div className="page-hero__container">
             <div className="page-hero__image page-hero__image--contact">
-              <form className="contact-form">
-                <div className="contact-form__wrapper">
-                  <fieldset className="contact-form__fieldset">
-                    <div className="contact-form__container">
-                      <input
-                        className="contact-form__input"
-                        placeholder="Navn"
-                      />
-                      <label className="contact-form__label">Navn</label>
-                    </div>
-                    <div className="contact-form__container">
-                      <input
-                        className="contact-form__input"
-                        placeholder="E-post"
-                      />
-                      <label className="contact-form__label">E-post</label>
-                    </div>
-                    <div className="contact-form__container">
-                      <input
-                        className="contact-form__input"
-                        placeholder="E-post"
-                      />
-                      <label className="contact-form__label">Telefon</label>
-                    </div>
-                    <div className="contact-form__container">
-                      <textarea
-                        className="contact-form__textarea"
-                        rows="5"
-                        placeholder="Melding"
-                      ></textarea>
-                      <label className="contact-form__label">Melding</label>
-                    </div>
-                  </fieldset>
-                  <button className="contact-form__button">Send</button>
-                </div>
-              </form>
+              <ContactForm />
             </div>
-            <div className="page-hero__content">
+            <div className="page-hero__content contact-hero__content">
               <Heading size="1" cssClass="page-hero__title">
                 Kontakt.
               </Heading>
               <div className="page-hero__text">
-                <p>
-                  For alle typer henvendelser benytt kontaktskjemaet, eller ta
-                  direkte kontakt på telefon eller e-post, om du foretrekker
-                  det.
-                </p>
-                <p>
-                  Dersom du har spørsmål se gjerne ofte stilte spørsmål. Finner
-                  du ikke det du lurer på der, tar du kontakt.
-                </p>
+                <ul className="contact-hero__list">
+                  <li>
+                    For bestilling av time eller andre typer henvendelser benytt
+                    kontaktskjemaet, eller ta direkte kontakt på telefon eller
+                    e-post.
+                  </li>
+                  <li>
+                    På grunn av arbieid i Nordsjøen kan jeg ikke alltid nås på
+                    telefon, men jeg vil være tilgjengelig på e-post og via
+                    kontaktskjemaet.
+                  </li>
+                  <li>
+                    Dersom du har spørsmål se gjerne ofte stilte spørsmål.
+                    Finner du ikke det du lurer på der er du velkommen til å ta
+                    kontakt.
+                  </li>
+                </ul>
               </div>
               <hr className="contact-hero__divider" />
               <div className="contact-hero__links">
@@ -83,9 +57,6 @@ export default function Contact() {
           </div>
         </section>
       </div>
-      {/* <div className="contact">
-          <ContactBanner />
-        </div> */}
     </>
   );
 }

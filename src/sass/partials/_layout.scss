@@ -175,7 +175,7 @@
   margin: 0 auto;
 
   @media (min-width: getBreakpoint(large)) {
-    height: calc(75vh - 100px);
+    height: calc(100vh - 100px);
   }
 }
 
@@ -207,10 +207,6 @@
     padding: 2rem 1rem;
     overflow: hidden;
 
-    @media (min-width: getBreakpoint(small)) {
-      padding: 2rem;
-    }
-
     @media (min-width: getBreakpoint(large)) {
       padding: 3rem;
       flex-basis: 60%;
@@ -224,6 +220,26 @@
 }
 
 .contact-hero {
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    @media (min-width: getBreakpoint(small)) {
+      padding: 2rem 0;
+      max-width: 500px;
+    }
+
+    @media (min-width: getBreakpoint(large)) {
+      max-width: 100%;
+      padding: 3rem;
+    }
+
+    @media (min-width: getBreakpoint(twoXLarge)) {
+      padding: 4rem;
+    }
+  }
+
   &__divider {
     width: 100%;
     border: 1px solid #1b556f;

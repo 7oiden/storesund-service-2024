@@ -78,7 +78,7 @@ em {
 .page-hero__heading {
   font-family: $sub;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 600;
   color: getColor(primaryHeading);
   padding-bottom: 1rem;
 
@@ -123,17 +123,12 @@ em {
 }
 
 .contact-form__heading {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 600;
-  text-align: center;
-  background-color: getColor(colorBg);
-  color: getColor(tagBg);
-  padding: 1rem 2rem;
-  border-radius: 3px 3px 0 0;
-
-  @extend .page-width;
+  color: getColor(primaryBg);
+  margin-bottom: 1.5rem;
 
   @media (min-width: getBreakpoint(large)) {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
