@@ -33,6 +33,7 @@ export default function ContactForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState(null);
+  const [isFeedbackVisible, setIsFeedbackVisible] = useState(false);
 
   const url = FORM_URL;
 
@@ -85,13 +86,28 @@ export default function ContactForm() {
   useEffect(() => {
     let timer;
     if (submitted) {
+      setIsFeedbackVisible(true);
       // Hide success message after 4 seconds
       timer = setTimeout(() => {
         setSubmitted(false);
+        setIsFeedbackVisible(false);
       }, 4000);
     }
     return () => clearTimeout(timer);
   }, [submitted]);
+
+  useEffect(() => {
+    let timer;
+    if (serverError) {
+      setIsFeedbackVisible(true);
+      // Hide error message after 4 seconds
+      timer = setTimeout(() => {
+        setServerError(false);
+        setIsFeedbackVisible(false);
+      }, 4000);
+    }
+    return () => clearTimeout(timer);
+  }, [serverError]);
 
   const handleClearName = () => resetField("your-name");
   const handleClearEmail = () => resetField("your-email");
@@ -100,113 +116,117 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
-      <div className="contact-form__wrapper">
-        <Heading size="2" cssClass="contact-form__heading">
-          Kontaktskjema.
-        </Heading>
-        <fieldset disabled={submitting} className="contact-form__fieldset">
-          <div className="contact-form__container">
-            <input
-              className="contact-form__input"
-              type="text"
-              id="name"
-              placeholder="Oppgi navn"
-              autoComplete="off"
-              {...register("your-name")}
-            />
-            <label
-              htmlFor="name"
-              className="contact-form__label"
-              style={{ color: errors["your-name"] ? "#f47777" : null }}
-            >
-              Navn
-            </label>
-            <MdClose
-              onClick={handleClearName}
-              className="contact-form__clear"
-            />
-            {errors["your-name"] && (
-              <span className="input-error">{errors["your-name"].message}</span>
-            )}
-          </div>
-          <div className="contact-form__container">
-            <input
-              className="contact-form__input"
-              type="text"
-              id="email"
-              placeholder="Oppgi E-post"
-              autoComplete="off"
-              {...register("your-email")}
-            />
-            <label
-              htmlFor="email"
-              className="contact-form__label"
-              style={{ color: errors["your-email"] ? "#f47777" : null }}
-            >
-              E-post
-            </label>
-            <MdClose
-              onClick={handleClearEmail}
-              className="contact-form__clear"
-            />
-            {errors["your-email"] && (
-              <span className="input-error">
-                {errors["your-email"].message}
-              </span>
-            )}
-          </div>
-          <div className="contact-form__container">
-            <input
-              className="contact-form__input"
-              type="tel"
-              placeholder="Oppgi telefonnummer"
-              autoComplete="off"
-              {...register("your-phone")}
-            />
-            <label htmlFor="phone" className="contact-form__label">
-              Telefon
-            </label>
-            <MdClose
-              onClick={handleClearPhone}
-              className="contact-form__clear"
-            />
-          </div>
-          <div className="contact-form__container">
-            <div className="hider"></div>
-            <textarea
-              className="contact-form__textarea"
-              placeholder="Skriv meldingen din her..."
-              id="message"
-              autoComplete="off"
-              {...register("your-message")}
-            ></textarea>
-            <label className="contact-form__label">Melding</label>
-            <MdClose
-              onClick={handleClearMessage}
-              className="contact-form__clear"
-              id="clear-msg"
-            />
-            {errors["your-message"] && (
-              <span className="input-error" id="textarea-error">
-                {errors["your-message"].message}
-              </span>
-            )}
-          </div>
-        </fieldset>
-        {submitted && (
-          <Feedback heading="Takk for meldingen din!" status="success">
-            Jeg kommer tilbake til deg snarlig.
-          </Feedback>
-        )}
-        {serverError && (
-          <Feedback heading="Noe gikk galt!" status="error">
-            {serverError}
-          </Feedback>
-        )}
-        <button className="contact-form__button">
-          {submitting ? <>Sender...</> : "Send"}
-        </button>
-      </div>
+      {!isFeedbackVisible && !serverError && (
+        <div className="contact-form__wrapper">
+          <Heading size="2" cssClass="contact-form__heading">
+            Kontaktskjema.
+          </Heading>
+          <fieldset disabled={submitting} className="contact-form__fieldset">
+            <div className="contact-form__container">
+              <input
+                className="contact-form__input"
+                type="text"
+                id="name"
+                placeholder="Oppgi navn"
+                autoComplete="off"
+                {...register("your-name")}
+              />
+              <label
+                htmlFor="name"
+                className="contact-form__label"
+                style={{ color: errors["your-name"] ? "#f47777" : null }}
+              >
+                Navn
+              </label>
+              <MdClose
+                onClick={handleClearName}
+                className="contact-form__clear"
+              />
+              {errors["your-name"] && (
+                <span className="input-error">
+                  {errors["your-name"].message}
+                </span>
+              )}
+            </div>
+            <div className="contact-form__container">
+              <input
+                className="contact-form__input"
+                type="text"
+                id="email"
+                placeholder="Oppgi E-post"
+                autoComplete="off"
+                {...register("your-email")}
+              />
+              <label
+                htmlFor="email"
+                className="contact-form__label"
+                style={{ color: errors["your-email"] ? "#f47777" : null }}
+              >
+                E-post
+              </label>
+              <MdClose
+                onClick={handleClearEmail}
+                className="contact-form__clear"
+              />
+              {errors["your-email"] && (
+                <span className="input-error">
+                  {errors["your-email"].message}
+                </span>
+              )}
+            </div>
+            <div className="contact-form__container">
+              <input
+                className="contact-form__input"
+                type="tel"
+                placeholder="Oppgi telefonnummer"
+                autoComplete="off"
+                {...register("your-phone")}
+              />
+              <label htmlFor="phone" className="contact-form__label">
+                Telefon
+              </label>
+              <MdClose
+                onClick={handleClearPhone}
+                className="contact-form__clear"
+              />
+            </div>
+            <div className="contact-form__container">
+              <div className="hider"></div>
+              <textarea
+                className="contact-form__textarea"
+                placeholder="Skriv meldingen din her..."
+                id="message"
+                autoComplete="off"
+                {...register("your-message")}
+              ></textarea>
+              <label className="contact-form__label">Melding</label>
+              <MdClose
+                onClick={handleClearMessage}
+                className="contact-form__clear"
+                id="clear-msg"
+              />
+              {errors["your-message"] && (
+                <span className="input-error" id="textarea-error">
+                  {errors["your-message"].message}
+                </span>
+              )}
+            </div>
+          </fieldset>
+          <button className="contact-form__button">
+            {submitting ? <>Sender...</> : "Send"}
+          </button>
+        </div>
+      )}
+      {submitted && (
+        <Feedback heading="Takk for meldingen din!" status="success">
+          Jeg kommer tilbake til deg snarlig.
+        </Feedback>
+      )}
+      {serverError && (
+        <Feedback heading="Oops..Noe gikk galt!" status="error">
+          Vennligst forsøk igjen senere.
+        </Feedback>
+      )}
     </form>
   );
 }

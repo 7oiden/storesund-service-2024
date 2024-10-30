@@ -1,17 +1,21 @@
 .feedback {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 1rem 2rem 1rem 3rem;
-  align-items: flex-start;
-  align-self: flex-start;
   gap: 0.5rem;
-  border-radius: 5px;
-  background: #ecfdf5;
+  max-width: 500px;
+  align-items: center;
+  align-self: center;
+  border-radius: 3px;
+  background: #66d9af37;
+  border: 3px solid #66d9af;
+  color: getColor(whiteText);
   position: relative;
+  margin: 0 auto;
+  padding: 2rem;
 
   &--success {
-    background-color: getColor(success);
+    background: #66d9af37;
+    border: 3px solid #66d9af;
   }
 
   &--warning {
@@ -19,7 +23,8 @@
   }
 
   &--error {
-    background-color: getColor(error);
+    background: #f4777737;
+    border: 3px solid #f47777;
   }
 
   &--info {
@@ -29,14 +34,15 @@
 
 .feedback__heading {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
 
   @media (min-width: getBreakpoint(large)) {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
   &--success {
-    color: getColor(successHeading);
+    color: #66d9af;
   }
 
   &--warning {
@@ -44,7 +50,7 @@
   }
 
   &--error {
-    color: getColor(errorHeading);
+    color: #f47777;
   }
 
   &--info {
@@ -53,16 +59,16 @@
 }
 
 .feedback__text {
-  font-size: 0.875rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
 
   @media (min-width: getBreakpoint(large)) {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   &--success {
     background-color: getColor(success);
-    color: getColor(successText);
+    color: #66d9af;
   }
 
   &--warning {
@@ -72,7 +78,7 @@
 
   &--error {
     background-color: getColor(error);
-    color: getColor(errorText);
+    color: #f47777;
   }
 
   &--info {
@@ -85,16 +91,16 @@
   width: 1.375rem;
   height: 1.375rem;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 1.5rem;
 
   @media (min-width: getBreakpoint(large)) {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   &--success {
-    color: getColor(successIcon);
+    color: #66d9af;
   }
 
   &--warning {
@@ -102,7 +108,7 @@
   }
 
   &--error {
-    color: getColor(errorIcon);
+    color: #f47777;
   }
 
   &--info {
