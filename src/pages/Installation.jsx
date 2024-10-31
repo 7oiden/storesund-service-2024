@@ -61,8 +61,7 @@ export default function Installation() {
           />
         </div>
         <InfoBox
-          heading="Ikke bare luft-til-luft 
-varmepumper"
+          heading="Ikke bare luft-til-luft varmepumper"
           image={Image}
           btn={true}
         >

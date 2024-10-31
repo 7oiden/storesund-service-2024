@@ -182,7 +182,11 @@ export default function ContactForm() {
                 autoComplete="off"
                 {...register("your-phone")}
               />
-              <label htmlFor="phone" className="contact-form__label">
+              <label
+                htmlFor="phone"
+                className="contact-form__label"
+                style={{ color: errors["your-email"] ? "#f47777" : null }}
+              >
                 Telefon
               </label>
               <MdClose
@@ -199,7 +203,12 @@ export default function ContactForm() {
                 autoComplete="off"
                 {...register("your-message")}
               ></textarea>
-              <label className="contact-form__label">Melding</label>
+              <label
+                className="contact-form__label"
+                style={{ color: errors["your-email"] ? "#f47777" : null }}
+              >
+                Melding
+              </label>
               <MdClose
                 onClick={handleClearMessage}
                 className="contact-form__clear"

@@ -23,8 +23,12 @@ em {
 .hero__subheading {
   color: #66d9af;
   font-family: $sub;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
+
+  @media (min-width: getBreakpoint(large)) {
+    font-size: 1.5rem;
+  }
 
   strong {
     text-decoration: underline;
@@ -33,15 +37,23 @@ em {
 
 .about__heading,
 .other-services__heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
+
+     @media (min-width: getBreakpoint(large)) {
+    font-size: 2rem;
+  }
 }
 
 .std-services__heading,
 .why-me__heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
+
+   @media (min-width: getBreakpoint(large)) {
+    font-size: 2rem;
+  }
 }
 
 .serv-heading {
@@ -87,10 +99,12 @@ em {
   }
 }
 
+.hero__text,
 .page-hero__text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-weight: 400;
 
   @media (min-width: getBreakpoint(large)) {
     font-size: 1.125rem;
@@ -105,9 +119,11 @@ em {
   border-radius: 3px;
   width: 95%;
   margin: 0 auto;
+  font-size: 1rem;
 
   @media (min-width: getBreakpoint(large)) {
     width: 100%;
+    font-size: 1.25rem;
   }
 }
 

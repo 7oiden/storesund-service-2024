@@ -28,7 +28,7 @@
 }
 
 .serv-heading__icon svg {
-  width: 4rem;
+  width: 3rem;
   color: getColor(primaryHeading);
 
   @media (min-width: getBreakpoint(large)) {
@@ -42,5 +42,37 @@
 
   @media (min-width: getBreakpoint(large)) {
     width: 1.5rem;
+  }
+}
+
+.why-me-card__icon {
+  width: 3rem;
+  height: 3rem;
+
+  @media (min-width: getBreakpoint(large)) {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  & svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.serv-card__icon {
+  width: 3rem;
+  height: 3rem;
+  color: #66d9af;
+
+  @media (min-width: getBreakpoint(large)) {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  & svg {
+    width: 100%;
+    height: auto;
+    color: #66d9af;
   }
 }

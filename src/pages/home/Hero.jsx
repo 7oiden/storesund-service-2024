@@ -19,12 +19,12 @@ export default function Hero() {
                 Montering, service & reparasjon i <strong>Bergen</strong>
               </Heading>
             </hgroup>
-            <p>
+            <p className="hero__text">
               Men ikke bare varmepumper. Jeg tar på meg alle typer oppdrag på
               kulde- og varmeanlegg i Bergen og omegn, både for næring og
               private.
             </p>
-            <p>
+            <p className="hero__text">
               Ta kontakt for timeavtale, eller for gratis befaring og
               prisestimat på tjenester som er utenom standard.
             </p>

@@ -58,6 +58,10 @@
     @media (min-width: getBreakpoint(medium)) {
       padding: 0 7.5%;
     }
+
+    @media (min-width: getBreakpoint(medium)) {
+      padding: 0 5%;
+    }
   }
 
   &__bg-circle--large::before {

@@ -17,7 +17,11 @@
   }
 
   &__logo {
+    width: 200px;
+
+    @media (min-width: getBreakpoint(large)) {
     width: 250px;
+  }
 
     & img {
       width: 100%;

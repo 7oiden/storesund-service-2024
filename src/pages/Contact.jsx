@@ -26,7 +26,7 @@ export default function Contact() {
                     e-post.
                   </li>
                   <li>
-                    På grunn av arbieid i Nordsjøen kan jeg ikke alltid nås på
+                    På grunn av jobb i Nordsjøen kan jeg ikke alltid nås på
                     telefon, men jeg vil være tilgjengelig på e-post og via
                     kontaktskjemaet.
                   </li>

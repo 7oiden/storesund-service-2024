@@ -10,6 +10,7 @@
   border: none;
   border-radius: 5px;
   font-weight: 500;
+  transition: all 250ms;
 
   &:hover {
     color: #fff;
@@ -45,5 +46,55 @@
     border: 3px solid getColor(primaryHeading);
     background-color: transparent;
     color: getColor(primaryHeading);
+  }
+}
+
+.page-scroll {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1000;
+  width: 125px;
+  height: 125px;
+  background-color: getColor(primaryBtnBg);
+  color: getColor(whiteText);
+  border-radius: 50%;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: getBreakpoint(large)) {
+    bottom: 75px;
+    right: 75px;
+    width: 75px;
+    height: 75px;
+    align-content: center;
+    justify-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: getBreakpoint(xxLarge)) {
+  }
+
+  &__icon {
+    position: absolute;
+    color: getColor(primaryBg);
+    width: 32px;
+    height: 32px;
+    transform: translate(-75%, -75%);
+
+    @media (min-width: getBreakpoint(large)) {
+      width: 40px;
+      height: 40px;
+      transform: translate(0);
+    }
+
+    & svg {
+      width: 100%;
+      height: 100%;
+      color: getColor(primaryBg);
+    }
   }
 }

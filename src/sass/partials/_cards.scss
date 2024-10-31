@@ -7,22 +7,11 @@
   color: #fff;
   border-radius: 15px;
   padding: 2rem;
+  transition: all 250ms;
 
   &:hover {
     color: #fff;
     opacity: 0.75;
-  }
-
-  &__icon {
-    width: 4rem;
-    height: 4rem;
-    color: #66d9af;
-
-    & svg {
-      width: 100%;
-      height: auto;
-      color: #66d9af;
-    }
   }
 
   &__heading {
@@ -46,18 +35,12 @@
   align-items: center;
   gap: 1rem;
   color: getColor(darkText);
-  padding: 2rem;
+  padding: 1rem;
   line-height: 1.35;
 
-  &__icon {
-    width: 4rem;
-    height: 4rem;
-
-    & svg {
-      width: 100%;
-      height: auto;
+   @media (min-width: getBreakpoint(large)) {
+      padding: 2rem;
     }
-  }
 
   &__heading {
     font-size: 1.375rem;

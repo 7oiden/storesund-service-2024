@@ -18,5 +18,5 @@ export default function ContactBannerLink({ to, icon, children }) {
 ContactBannerLink.propTypes = {
   to: PropTypes.string.isRequired,
   icon: PropTypes.node.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
