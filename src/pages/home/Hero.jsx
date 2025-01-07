@@ -16,7 +16,7 @@ export default function Hero() {
                 Varmepumpe?
               </Heading>
               <Heading size="2" cssClass="hero__subheading">
-                Montering, service & reparasjon i <strong>Bergen</strong>
+                Montering, service & reparasjon i Bergensområdet
               </Heading>
             </hgroup>
             <p className="hero__text">

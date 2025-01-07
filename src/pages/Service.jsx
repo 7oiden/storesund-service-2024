@@ -14,24 +14,27 @@ export default function Service() {
       <div className="top-wrapper">
         <PageHero
           title="Service."
-          heading="Sikre lang levetid og optimal energieffektivitet med regelmessig service på din varmepumpe."
+          heading="Sikre lang levetid og optimal energieffektivitet med regelmessig service."
           image="service"
         >
-          <p>
-            En godt vedlikeholdt varmepumpe kan gi deg lavere strømregning ved å
-            sørge for at den fungerer mer effektivt. På grunn av oppbygging av
-            smuss på lamellene i enheten, kan man oppleve en merkbar reduksjon i
-            ytelsen over tid.
-          </p>
-          <p>
-            Regelmessig service bidrar også til å kunne oppdage slitasje og
-            potensielle problemer før de blir alvorlige og kostbare å reparere.
-          </p>
-          <p>
-            Generelle anbefalinger er å få utført en service annethvert år, i
-            tillegg bør man jevnlig utføre vedlikehold og rengjøring på
-            egenhånd.
-          </p>
+          <ul className="page-hero__list">
+            <li>
+              En godt vedlikeholdt varmepumpe kan gi deg lavere strømregning ved
+              å sørge for at den fungerer mer effektivt. På grunn av oppbygging
+              av smuss på lamellene i enheten, kan man oppleve en merkbar
+              reduksjon i ytelsen over tid.
+            </li>
+            <li>
+              Regelmessig service bidrar også til å kunne oppdage slitasje og
+              potensielle problemer før de blir alvorlige og kostbare å
+              reparere.
+            </li>
+            <li>
+              Generelle anbefalinger er å få utført en service annethvert år, i
+              tillegg bør man jevnlig utføre vedlikehold og rengjøring på
+              egenhånd.
+            </li>
+          </ul>
         </PageHero>
         <ContactBanner />
       </div>

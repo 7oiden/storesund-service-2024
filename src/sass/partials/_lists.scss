@@ -44,6 +44,7 @@
   }
 }
 
+.page-hero__list,
 .contact-hero__list {
   display: flex;
   flex-direction: column;
@@ -62,6 +63,10 @@
       color: getColor(primaryHeading);
     }
   }
+}
+
+.page-hero__list {
+  margin-top: 0;
 }
 
 .serv-tag {

@@ -165,7 +165,7 @@
   // @extend .page-width;
 
   @media (min-width: getBreakpoint(large)) {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 6rem);
   }
 }
 
@@ -176,7 +176,7 @@
   margin: 0 auto;
 
   @media (min-width: getBreakpoint(large)) {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 6rem);
   }
 }
 
@@ -208,18 +208,18 @@
     padding: 2rem 5% 3rem 5%;
     overflow: hidden;
 
-    @media (min-width: getBreakpoint(medium)) {
-      padding: 2rem 7.5% 3rem 7.5%;
-    }
-
     @media (min-width: getBreakpoint(large)) {
-      flex-basis: 60%;
-      padding: 2rem 5% 3rem 5%;
+      padding: 0 5%;
     }
 
-    @media (min-width: getBreakpoint(twoXLarge)) {
-      flex-basis: 50%;
-    }
+    // @media (min-width: getBreakpoint(twoXLarge)) {
+    //   flex-basis: 40%;
+    // }
+
+    // @media (min-width: getBreakpoint(twoXLarge)) {
+    //   outline: 3px solid #ffffff0a;
+    //   outline-offset: -4rem;
+    // }
   }
 }
 
@@ -289,11 +289,6 @@
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
-
-    @media (min-width: getBreakpoint(small)) {
-      max-width: 500px;
-      padding: 3rem 0;
-    }
 
     @media (min-width: getBreakpoint(large)) {
       max-width: 100%;

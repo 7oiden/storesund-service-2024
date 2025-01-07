@@ -20,22 +20,23 @@ export default function Installation() {
           heading="Jeg monterer og demonterer alle typer varmepumper, også de du har kjøpt selv."
           image="installation"
         >
-          <p>
-            Fastpris på standard montasje gjelder luft-til-luft-varmepumpe
-            uansett merke i en bolig med trevegg, der det forutsettes god
-            atkomst.
-          </p>
-          <p>
-            Kjøring samt nødvendig utstyr for en klar-til-bruk installasjon er
-            inkludert i prisen, dette med forbehold om at elektrisk tilkobling
-            for utedel er på plass. Se lenger ned på siden for komplett liste
-            for hva som er inkludert.
-          </p>
-          <p>
-            Ta kontakt i dag for å bestille time, eller dersom du ønsker
-            pristilbud på montasje av andre typer varmepumper, eller anlegg som
-            faller utenom det som er definert som standard.{" "}
-          </p>
+          <ul className="page-hero__list">
+            <li>
+              Fastpris på standard montasje gjelder luft-til-luft-varmepumpe
+              uansett merke i en bolig med trevegg, der det forutsettes god
+              atkomst.
+            </li>
+            <li>
+              Kjøring samt nødvendig utstyr for en klar-til-bruk installasjon er
+              inkludert i prisen, dette med forbehold om at elektrisk tilkobling
+              for utedel er på plass.
+            </li>
+            <li>
+              Ta kontakt i dag for å bestille time, eller dersom du ønsker
+              pristilbud på montasje av andre typer varmepumper, eller anlegg
+              som faller utenom det som er definert som standard.{" "}
+            </li>
+          </ul>
         </PageHero>
         <ContactBanner />
       </div>

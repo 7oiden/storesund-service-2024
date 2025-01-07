@@ -2,7 +2,7 @@
   position: relative;
 
   @media (min-width: getBreakpoint(medium)) {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 6rem);
   }
 
   &__container {
@@ -34,7 +34,7 @@
 
   &__image {
     width: 100%;
-    background-image: url("../assets/images/hero.jpg");
+    background-image: url("../assets/images/hero-blurred.jpg");
     background-size: cover;
     background-position: center center;
   }
@@ -54,10 +54,6 @@
     gap: 1rem;
     color: #fff;
     padding: 2rem 5% 3rem 5%;
-
-    @media (min-width: getBreakpoint(medium)) {
-      padding: 0 7.5%;
-    }
 
     @media (min-width: getBreakpoint(medium)) {
       padding: 0 5%;
@@ -159,11 +155,6 @@
   top: 2rem;
   width: 6rem;
   height: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: $badge;
   font-weight: 600;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 
@@ -174,37 +165,32 @@
     height: 8rem;
   }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
   &__top {
     position: absolute;
     color: #fff;
-    top: -0.75rem;
-    left: 0;
-    font-weight: 500;
+    top: 40%;
+    left: 50%;
+    font-weight: 600;
     font-size: 1.5rem;
     transform: translate(-50%, -50%);
     white-space: nowrap;
+    font-family: $main;
 
     @media (min-width: getBreakpoint(xLarge)) {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
   }
 
   &__bottom {
     position: absolute;
-    top: 0.75rem;
-    left: 0;
+    bottom: 40%;
+    right: 50%;
     color: #66d9af;
-    font-weight: 600;
-    transform: translate(-50%, -50%);
+    font-weight: 500;
+    transform: translate(50%, 50%);
+    font-family: $test;
 
     @media (min-width: getBreakpoint(xLarge)) {
-      top: 1rem;
       font-size: 1.25rem;
     }
   }

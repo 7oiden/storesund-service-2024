@@ -22,7 +22,7 @@
   height: auto;
   min-height: 300px;
   width: 100%;
-  flex-basis: 40%;
+  flex-basis: 50%;
   // background-image: url("../assets/images/pic-11.png");
   background-color: #111a28;
   background-size: cover;
@@ -30,25 +30,25 @@
   display: flex;
 
   @media (min-width: getBreakpoint(twoXLarge)) {
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
 
   &--installation {
-    background-image: url("../assets/images/installation.jpg");
+    background-image: url("../assets/images/installation-blurred.jpg");
   }
 
   &--service {
-    background-image: url("../assets/images/service.jpg");
+    background-image: url("../assets/images/service-blurred.jpg");
   }
 
   &--repair {
-    background-image: url("../assets/images/repair.jpg");
+    background-image: url("../assets/images/repair-blurred.jpg");
   }
 
   &--contact {
     @media (min-width: getBreakpoint(twoXLarge)) {
       outline: 3px solid #ffffff0a;
-      outline-offset: -3rem;
+      outline-offset: -4rem;
     }
   }
 }
