@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link, NavLink } from "react-router-dom";
 import { MdMenu, MdClose } from "react-icons/md";
-import logo from "../../assets/storesund-logo.png";
+import logo from "../../assets/storesund-logo-alt.png";
 
 export default function Navbar({ handleToggle, isMenuOpen }) {
   return (
