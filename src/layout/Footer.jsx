@@ -1,4 +1,5 @@
 import FooterLink from "../components/common/FooterLink";
+import FooterHashLink from "../components/common/FooterHashLink";
 import LinkButton from "../components/common/LinkButton";
 import { FaRegCopyright } from "react-icons/fa";
 
@@ -42,7 +43,9 @@ export default function Footer() {
           <hr className="footer__hor-divider" />
           <div>
             <p className="footer__heading">FAQ</p>
-            <FooterLink to="contact">Ofte stilte spørsmål</FooterLink>
+            <FooterHashLink to="contact#faq">
+              Ofte stilte spørsmål
+            </FooterHashLink>
           </div>
           <div>
             <p className="footer__heading">Nøytral info om varmepumper</p>

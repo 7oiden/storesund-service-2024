@@ -1,0 +1,54 @@
+.faq-accordion {
+  background-color: getColor(secondaryBg);
+  border-radius: 0 0 3px 3px;
+  width: auto;
+  padding-top: 4rem;
+
+  &:last-child {
+    padding-bottom: 4rem;
+  }
+
+  &__content {
+    width: 95%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @media (min-width: getBreakpoint(large)) {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    border-top: 1px solid #e0dfdf;
+    padding: 0.5rem 0;
+
+    &:first-of-type {
+      border-top: none;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    color: getColor(darkText);
+    padding: 1rem 2rem;
+    border: none;
+    margin: 0 auto;
+    font-family: $main;
+    font-size: 1rem;
+    font-weight: 600;
+
+    @media (min-width: getBreakpoint(large)) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__panel {
+    padding: 0rem 2rem 1.5rem 2rem;
+  }
+}

@@ -261,7 +261,8 @@
   }
 }
 
-.service-section {
+.service-section,
+.faq-section {
   @extend .page-width;
   display: flex;
   flex-direction: column;
@@ -271,6 +272,10 @@
   @media (min-width: getBreakpoint(large)) {
     gap: 5rem;
   }
+}
+
+.faq-section {
+  margin: 0 auto;
 }
 
 .footer {

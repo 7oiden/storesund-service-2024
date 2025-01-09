@@ -4,10 +4,11 @@ import ContactBannerLink from "../components/common/ContactBannerLink";
 import ContactForm from "./contact/ContactForm";
 import { FaSquarePhone } from "react-icons/fa6";
 import { FaSquareEnvelope } from "react-icons/fa6";
+import FaqAccordion from "./contact/FaqAccordion";
 
 export default function Contact() {
   return (
-    <>
+    <div>
       <div className="top-wrapper2">
         <section className="page-hero">
           <div className="page-hero__container">
@@ -57,6 +58,9 @@ export default function Contact() {
           </div>
         </section>
       </div>
-    </>
+      <section className="faq-section" id="faq">   
+          <FaqAccordion />
+      </section>
+    </div>
   );
 }
